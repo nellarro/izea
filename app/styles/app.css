@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+* {
+	margin: 0 auto;
+}
+/* adding 100% makes sure the gradient doesn't chop up */
+
+body, html { 
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+
+html {
+	height: 100vh; 
+}
+
+body {
+	height: 100vh;
+	background-color: #abb4c6;
+	background-image: linear-gradient(28deg, #abb4c6 0%, #fe9140 50%, #FA709A 100%);
+	background-size: cover;
+}
+/* HOME STYLES */
+
+.home-button {
+	display: flex;
+	min-width: 50vw;
+	height: 25vh;
+	justify-content: center;
+	background: paleturquoise;
+	border-radius: 10px;
+	font-size: 3em;
+	box-shadow: 10px 10px 5px #888888;
+	margin-top: 5em;
+}
+
+/* DIARY STYLES */
+
+#m, #a, button {
+	font-family: 'Raleway', serif;
+	font-size: 1em;
+}
+
+#diary {
+	margin-top: 7rem;
+}
+
+#a {
+	display: flex;
+	margin-bottom: 2em;
+	width: 50vw;
+	height: 40vh;
+	border: none;
+	
+}
+
+#m, button {
+	border-style: none;
+	background: white;
+	text-align: center;
+}
+
+form div {
+	display: flex;
+	border: 1px solid black;
+	width: 50vw;
+	justify-content: flex-end;
+}
+
+#m {
+	flex-grow: 1;
+}
+
+button {
+	text-transform: uppercase;
+	color: blue;
+}
+
+button:hover {
+	color: tomato;
+}
