@@ -1,10 +1,15 @@
-<form id="diary"><textarea id="a"></textarea>
+<form id="diary">
+    <textarea
+        id="a"
+        onblur={{action "handleSubmit" value="target.value"}}
+         />
             <div>
                   <input 
                   id="m" 
                   autoComplete="off" 
-                  placeholder="keyword"  
-                  {{action "handleChange" on="submit"}} />
+                  placeholder="keyword"
+                  value={{keyphrase}} 
+                  onblur={{action "handleChange" value="target.value"}} />
                   <button>Send</button>
             </div>
 </form>
